@@ -34,7 +34,13 @@ const routes = [
     icon: <MdOutlineShoppingCart className="w-6 h-6" />,
     component: <NFTMarketplace />,
     secondary: true,
-
+  },
+  {
+    name: 'Reports',
+    layout: '/admin',
+    path: 'reports',
+    icon: <MdBarChart className="w-6 h-6" />,
+    component: <DataTables />,
   },
 
   {
@@ -66,12 +72,12 @@ const routes = [
     icon: <MdLock className="w-6 h-6" />,
     component: <SignIn />,
   },
-  {
-    name: "RTL Admin",
-    layout: "/rtl",
-    path: "rtl",
-    icon: <MdHome className="w-6 h-6" />,
-    component: <RTLDefault />,
-  },
+  // {
+  //   name: "RTL Admin",
+  //   layout: "/rtl",
+  //   path: "rtl",
+  //   icon: <MdHome className="w-6 h-6" />,
+  //   component: <RTLDefault />,
+  // },
 ];
 export default routes;
